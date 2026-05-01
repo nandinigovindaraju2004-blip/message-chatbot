@@ -9,7 +9,10 @@ app.set('view engine', 'ejs');
 
 app.listen(8080);
 
-// localhost:8080
+//localhost:8080
+app.listen(8080, function(){
+    console.log("Server running at http://localhost:8080");
+});
 app.get('/',function(req,res){
 
     res.render('pages/index');
